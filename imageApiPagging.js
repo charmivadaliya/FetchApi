@@ -6,7 +6,6 @@ let endIndex = 50;
 
 document.addEventListener('keyup', (e) => {
   const searchString = e.target.value.toLowerCase();
-
   const filteredCharacters = Postarray.filter((character) => {
     return character.title.toLowerCase().includes(searchString);
   });
@@ -42,7 +41,6 @@ function onscrol() {
     Postarray.push(hpCharacters[i]);
     console.log(Postarray);
   }
-
   displayCharacters(Postarray);
 }
 
