@@ -16,17 +16,14 @@ function showImage(){
             var output = document.getElementById('div1');
             data.forEach(function(e){
     
-                output.innerHTML += `<div class="row" >
-                                          <div class="col-sm-3">
-                                                <div class="card">
-                                                    <img src="${e.url}" style="width:50%;height:50%"> 
-                                                    <div class="card-body">
-                                                        <h5>${e.title}</h5>
-                                                        <a href="${e.thumbnailUrl}" class="btn btn-primary">ShowThumb</a>
-
-                                                    </div> 
-                                                </div>
-                                            </div> 
+                output.innerHTML += `<div class="col-sm-3" >
+                                        <div class="card">
+                                            <img src="${e.url}" style="width:50%;height:50%"> 
+                                                <div class="card-body">
+                                                    <h5>${e.title}</h5>
+                                                    <a href="${e.thumbnailUrl}" class="btn btn-primary">ShowThumb</a>
+                                                </div> 
+                                        </div>
                                     </div>`;
             }); 
         });
